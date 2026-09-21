@@ -21,3 +21,8 @@ const inspecao2 = new InspecaoVisual('002', 'B2', 20, 'OK');
 inspecao1.atribuirInspetor(inspetor1);
 inspecao2.atribuirInspetor(inspetor1);
 
+inspecao1.adicionarPecas(10);
+console.log(`Quantidade após adicionar peças: ${inspecao1.quantidade}`);
+
+inspecao1.adicionarPecas(0);
+console.log(`Quantidade após tentar adicionar 0 peças: ${inspecao1.quantidade}`);

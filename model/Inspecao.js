@@ -3,26 +3,20 @@ export class Inspecao {
     lote
     #quantidadeVerificada
 
-    constuctor(codigo, lote, quantidadeVerificada) {
+    constructor(codigo, lote, quantidadeVerificada) {
         this.codigo = codigo
         this.lote = lote
         this.#quantidadeVerificada = quantidadeVerificada
     }
 
     get quantidade() {
-        if(quantidade > 0) {
-            return this.#quantidadeVerificada
-
-        } else {
-            throw new Error(`Quantidade atual indisponível: ${this.#quantidadeVerificada}`)
-        }
+        return this.#quantidadeVerificada
     }
 
     adicionarPecas(quantidade) {
-        if(quantidade > 0) {
+        if (quantidade > 0) {
             this.#quantidadeVerificada += quantidade
             return true
-
         } else {
             return false
         }
