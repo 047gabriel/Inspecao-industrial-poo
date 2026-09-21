@@ -1,5 +1,4 @@
-import { Inspecao } from "./Inspecao.js";
-
+import { Inspecao } from "./inspecao.js";
 export class InspecaoVisual extends Inspecao {
     aspectoObservado
 

@@ -1,4 +1,4 @@
-import { Inspecao } from "./Inspecao.js";
+import { Inspecao } from "./inspecao.js"
 
 export class InspecaoDimensional extends Inspecao {
     medidaConferida
